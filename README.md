@@ -14,7 +14,10 @@ If this is not the case, we distinguish the following four cases to consider the
 4) We compare the dates of publication to ensure that the date of the preprint is older than the date of the peer-reviewed article.
 5) We compare the abstract of the preprint to the abstracts of the PubMed articles that passed the date check and either the author or the title check - depending on which search was successful in the beginning. We generate embeddings and apply the same method as for the title check described in (3).
 
-  
+**References:**  
+[1] Levenshtein, V. I. (1966). Binary codes capable of correcting deletions, insertions and reversals. Soviet Physics Doklady, 10(8), 707--710.  
+[2] Reimers N, Gurevych I. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. arXiv:190810084 [cs]. Published online August 27, 2019. Accessed October 4, 2021. http://arxiv.org/abs/1908.10084
+
 ## How to use
 
 Clone the repository to your local folder: `git clone https://github.com/zbmed/Pre2Pub`  
@@ -32,9 +35,8 @@ Run program:
 `Program to find a corresponding journal DOI for a preprint`  
 
 `optional arguments:`  
-`-h, --help            show this help message and exit` 
-`--preprint_doi PREPRINT_DOI` 
-`DOI of the preprint of interest` 
+`-h, --help            show this help message and exit`   
+`--preprint_doi PREPRINT_DOI DOI of the preprint of interest`   
 `--server SERVER       name of the preprint server; can be either biorxiv,
 medrxiv or other`  
 `--email EMAIL         Your email address to use the *Entrez API*; if you
@@ -42,10 +44,6 @@ send a lot of queries, this is obligatory`
   
 Example (replace the e-mail address!):  
 python main.py --preprint_doi 10.1101/2020.07.06.20147199 --server medrxiv --email mail@mail.com
-
-**References:**  
-[1] Levenshtein, V. I. (1966). Binary codes capable of correcting deletions, insertions and reversals. Soviet Physics Doklady, 10(8), 707--710.  
-[2] Reimers N, Gurevych I. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. arXiv:190810084 [cs]. Published online August 27, 2019. Accessed October 4, 2021. http://arxiv.org/abs/1908.10084
 
 
 ## Citation:
