@@ -1,4 +1,4 @@
-## Pre2Pub: An algorithm for tracking the path from preprint to journal in times of an infodemic
+## Pre2Pub: An algorithm for tracking the path from preprint to journal
 
 This repo contains an algorithm that, given the Digital Object Identifier (DOI) of a preprint,
 searches the corresponding journal article in three different sources: 
